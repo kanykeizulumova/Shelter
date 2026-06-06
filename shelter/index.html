@@ -11,18 +11,20 @@
 
 <body>
     <header>
-        <div class="logo-container">
-            <p class="logo-title">Cozy House</p>
-            <p class="logo-subtitle">Shelter for pets in Boston</p>
+        <div class="header-wrapper">
+            <div class="logo-container">
+                <p class="logo-title">Cozy House</p>
+                <p class="logo-subtitle">Shelter for pets in Boston</p>
+            </div>
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="" class="nav-link paragraph-l">About the shelter</a></li>
+                    <li><a href="" class="nav-link paragraph-l ">Our pets</a></li>
+                    <li><a href="" class="nav-link paragraph-l ">Help the shelter</a></li>
+                    <li><a href="" class="nav-link paragraph-l ">Contacts</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav class="nav-menu" id="nav-menu">
-            <ul class="nav-list">
-                <li><a href="" class="nav-link paragraph-l">About the shelter</a></li>
-                <li><a href="" class="nav-link paragraph-l ">Our pets</a></li>
-                <li><a href="" class="nav-link paragraph-l ">Help the shelter</a></li>
-                <li><a href="" class="nav-link paragraph-l ">Contacts</a></li>
-            </ul>
-        </nav>
     </header>
     <main class="main">
         <section class="start-screen">
@@ -61,14 +63,71 @@
         <section class="pets">
             <div class="pets-content">
                 <h3>Our friends who are looking for a house</h3>
-                <div class="slider"></div>
+                <div class="slider">
+                    <img src="../assets/button_arrow-left.svg" alt="arrow button icon">
+                    <div class="card-container">
+                        <div class="card">
+                            <img src="../assets/pets-katrine.svg" alt="cat katrine image">
+                            <p>Katrine</p>
+                            <button class="button-secondary">Learn more</button>
+                        </div>
+                        <div class="card">
+                            <img src="../assets/pets-jennifer (1).svg" alt="cat katrine image">
+                            <p>Jennifer</p>
+                            <button class="button-secondary">Learn more</button>
+                        </div>
+                        <div class="card">
+                            <img src="../assets/pets-woody.svg" alt="dog Woody image">
+                            <p>Woody</p>
+                            <button class="button-secondary">Learn more</button>
+                        </div>
+                    </div>
+                    <img src="../assets/button_arrow-right.svg" alt="arrow button icon">
+                </div>
                 <button class="button-primary">Get to know the rest</button>
             </div>
         </section>
         <section class="help">
             <div class="help-content">
                 <h3>How you can help our shelter</h3>
-                <div class="list"></div>
+                <div class="list">
+                    <div class="pet-food">
+                        <img src="../assets/pet-food.svg" alt="pet-food icon">
+                        <h4>Pet food</h4>
+                    </div>
+                    <div class="transportation">
+                        <img src="../assets/transportation.svg" alt="Transportation icon">
+                        <h4>Transportation</h4>
+                    </div>
+                    <div class="toys">
+                        <img src="../assets/toys.svg" alt="toys icon">
+                        <h4>Toys</h4>
+                    </div>
+                    <div class="bowls-cups">
+                        <img src="../assets/bowls-and-cups.svg" alt="Bowls and cups icon">
+                        <h4>Bowls and cups</h4>
+                    </div>
+                    <div class="shampoos">
+                        <img src="../assets/shampoos.svg" alt="Shampoos icon">
+                        <h4>Shampoos</h4>
+                    </div>
+                    <div class="vitamins">
+                        <img src="../assets/vitamins.svg" alt="Vitamins icon">
+                        <h4>Vitamins</h4>
+                    </div>
+                    <div class="medicines">
+                        <img src="../assets/medicines.svg" alt="Medicines icon">
+                        <h4>Medicines</h4>
+                    </div>
+                    <div class="collars">
+                        <img src="../assets/collars-or-leashes.svg" alt="Collars / leashes icon">
+                        <h4>Collars / leashes</h4>
+                    </div>
+                    <div class="sleeping-area">
+                        <img src="../assets/sleeping-area.svg" alt="Sleeping areas icon">
+                        <h4>Sleeping areas</h4>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="donation">
@@ -79,7 +138,10 @@
                 <div class="donation-container">
                     <h3>You can also make a donation</h3>
                     <h5>Name of the bank / Type of bank account</h5>
-                    <div class="credit-card"></div>
+                    <div class="credit-card">
+                        <img src="../assets/credit-card.svg" alt="credit card icon">
+                        <h4>8380 2880 8028 8791 7435</h4>
+                    </div>
                     <p>Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum
                         at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate.
                         Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
@@ -88,7 +150,35 @@
         </section>
     </main>
     <footer>
-        <div class="footer-content"></div>
+        <div class="footer-content">
+            <div class="footer-contacts">
+                <h3>For questions and suggestions</h3>
+                <div class="footer-mail">
+                    <img src="../assets/mail.svg" alt="email logo">
+                    <h4>email@shelter.com</h4>
+                </div>
+                <div class="footer-phone">
+                    <img src="../assets/phone.svg" alt="phone logo">
+                    <h4>+13 674 567 75 54</h4>
+                </div>
+            </div>
+            <div class="footer-locations">
+                <h3>We are waiting for your visit</h3>
+                <div class="footer-boston">
+                    <div class="boston-pin">
+                        <img src="../assets/pin.svg" alt="pin logo">
+                        <h4>1 Central Street, Boston (entrance from the store)</h4>
+                    </div>
+                </div>
+                <div class="footer-london">
+                    <div class="london-pin">
+                        <img src="../assets/pin.svg" alt="pin logo">
+                        <h4>18 South Park, London</h4>
+                    </div>
+                </div>
+            </div>
+            <div> <img src="../assets/footer-puppy.svg" alt="puppy licks the screen"></div>
+        </div>
     </footer>
 </body>
 
