@@ -398,6 +398,9 @@ body {
     }
 }
 
+.about {
+    background-color: var(--color-light-xl);
+}
 
 .about-content {
     margin: 0 auto;
@@ -430,5 +433,41 @@ body {
         text-align: center;
         color: var(--color-dark-l);
         margin: 0;
+    }
+}
+
+.start-screen-content {
+    padding: 90px 40px 0 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 42px;
+}
+
+.screen-content {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+    max-width: 460px;
+    padding-top: 163px;
+
+    h2 {
+        color: var(--color-light-xl);
+        margin: 0;
+    }
+
+    p {
+        color: var(--color-dark-s);
+        margin: 0;
+    }
+
+    button {
+        width: 207px;
+        color: var(--color-dark-3xl);
+        font-family: var(--main-font);
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 130%;
+        letter-spacing: 6%;
+        padding: 13px 35px;
     }
 }
