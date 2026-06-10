@@ -9,6 +9,7 @@
 html {
     overflow-x: hidden;
     scroll-behavior: smooth;
+    background-color: aquamarine;
 }
 
 
@@ -140,18 +141,31 @@ body {
 .footer-locations {
     display: flex;
     flex-direction: column;
+    padding-top: 16px;
+    padding-bottom: 60px;
 
     h3 {
         color: var(--color-light-xl);
+        margin: 0;
     }
 }
+
+.footer-contacts {
+    gap: 40px;
+}
+
+.footer-locations {
+    gap: 33px;
+    max-width: 302px;
+}
+
 
 .footer-mail,
 .footer-phone {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: self-start;
     gap: 20px;
     color: var(--color-primary);
 
@@ -159,14 +173,18 @@ body {
         width: 40px;
         height: 32px;
     }
+
+    h4 {
+        margin: 0;
+    }
 }
 
 .boston-pin,
 .london-pin {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: self-start;
     gap: 20px;
     color: var(--color-primary);
 
@@ -174,14 +192,18 @@ body {
         width: 22px;
         height: 32px;
     }
+
+    h4 {
+        margin: 0;
+    }
+
 }
 
 .header-wrapper {
     display: flex;
     justify-content: space-between;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 30px;
+    padding: 30px 40px;
+    background-color: var(--color-light-xl);
 }
 
 .logo-container {
@@ -193,7 +215,25 @@ body {
         margin: 0;
         padding: 0;
     }
+}
 
+.logo-contain {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    p {
+        margin: 0;
+        padding: 0;
+    }
+
+    .logo-title {
+        color: var(--color-dark-l);
+    }
+
+    .logo-subtitle {
+        color: var(--color-dark-3xl);
+    }
 }
 
 .nav-list {
@@ -205,6 +245,11 @@ body {
 .nav-link {
     text-decoration: none;
     color: var(--color-dark-s);
+}
+
+.nav-li {
+    text-decoration: none;
+    color: var(--color-dark-l);
 }
 
 .our-pets {
@@ -222,7 +267,8 @@ body {
 .card-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px
+    gap: 30px 40px;
+    padding: 15px 0;
 }
 
 .card {
@@ -236,6 +282,7 @@ body {
     align-items: center;
     margin: 0;
     padding: 0;
+    padding-bottom: 30px;
 
     button {
         color: var(--color-dark-3xl);
@@ -281,6 +328,7 @@ body {
     text-align: center;
     vertical-align: middle;
     background-color: inherit;
+    cursor: pointer;
 }
 
 .active {
@@ -295,7 +343,9 @@ body {
 }
 
 .act {
-    background: #F1CDB3;
+
+    border-bottom: 3px solid #F1CDB3;
+    color: var(--color-dark-3xl);
 }
 
 .paginator:hover {
@@ -366,5 +416,19 @@ body {
         p {
             margin: 0;
         }
+    }
+}
+
+.pets-content {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    align-items: center;
+    padding: 80px 40px 100px 40px;
+
+    h3 {
+        text-align: center;
+        color: var(--color-dark-l);
+        margin: 0;
     }
 }
