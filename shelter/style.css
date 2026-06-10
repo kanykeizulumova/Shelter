@@ -403,21 +403,28 @@ body {
 }
 
 .about-content {
-    margin: 0 auto;
+    padding: 80px 40px 100px 40px;
     display: flex;
-
+    gap: 120px;
+    justify-content: center;
 
     .about-container {
+
         display: flex;
         flex-direction: column;
         gap: 25px;
         width: 430px;
-        margin: 0 auto;
-        padding: 0;
+        margin-top: 14px;
+        margin-bottom: 14px;
 
-        h3,
+        h3 {
+            margin: 0;
+            color: var(--color-dark-l);
+        }
+
         p {
             margin: 0;
+            color: var(--color-dark-xl);
         }
     }
 }
