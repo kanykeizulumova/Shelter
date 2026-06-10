@@ -124,16 +124,11 @@ body {
 }
 
 .start-screen {
-    background-image: url('../assets/3f10d48595577108af837b8b441616746225b66e.png');
-    background: linear-gradient(0deg, #211F20, #211F20),
-        radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
-
+    background: url(../assets/3f10d48595577108af837b8b441616746225b66e.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
 }
 
 .footer-content {
-    background-image: url('../assets/3f10d48595577108af837b8b441616746225b66e.png');
-    background: linear-gradient(0deg, #211F20, #211F20),
-        radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%);
+    background: url(../assets/3f10d48595577108af837b8b441616746225b66e.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
     padding: 40px 40px 0 40px;
     display: flex;
     flex-direction: row;
@@ -299,6 +294,77 @@ body {
     color: var(--color-dark-s);
 }
 
+.act {
+    background: #F1CDB3;
+}
+
 .paginator:hover {
     cursor: pointer;
+}
+
+.pets,
+.donation {
+    background-color: var(--color-light-l);
+}
+
+.help {
+    background-color: var(--color-light-xl);
+}
+
+.help-content {
+    margin: 80px 40px 100px 40px;
+    color: var(--color-dark-l);
+
+    h3 {
+        text-align: center;
+        width: 308px;
+        height: auto;
+        margin: 0;
+        padding-bottom: 60px;
+    }
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 55px 120px;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+
+        img {
+            width: 60px;
+            height: 60px;
+        }
+
+        h4 {
+            margin: 0;
+        }
+    }
+}
+
+
+.about-content {
+    margin: 0 auto;
+    display: flex;
+
+
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        width: 430px;
+        margin: 0 auto;
+        padding: 0;
+
+        h3,
+        p {
+            margin: 0;
+        }
+    }
 }
