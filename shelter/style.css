@@ -15,6 +15,7 @@ html {
 
 :root {
     --color-primary: #F1CDB3;
+    --color-primary-light: #FDDCC4;
     --color-light-xl: #FFFFFF;
     --color-light-l: #F6F6F6;
     --color-light-s: #FAFAFA;
@@ -52,7 +53,7 @@ h4 {
     letter-spacing: 6%;
 }
 
-h5 {
+.h5 {
     font-family: var(--main-font);
     font-weight: 400;
     font-size: 15px;
@@ -82,6 +83,14 @@ h5 {
     gap: 10px;
     background-color: var(--color-primary);
     border-color: transparent;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.button-primary:hover,
+.button-secondary:hover {
+    background-color: var(--color-primary-light);
+    border: 2px solid #FDDCC4;
 }
 
 .button-secondary {
@@ -95,6 +104,8 @@ h5 {
     border-width: 2px;
     border: 2px solid #F1CDB3;
     color: var(--color-dark-3xl);
+    transition: background-color 0.3s ease;
+    cursor: pointer;
 }
 
 .logo-title {
@@ -126,6 +137,7 @@ body {
 }
 
 .start-screen {
+    padding-top: 90px;
     background: url(../assets/3f10d48595577108af837b8b441616746225b66e.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
 }
 
@@ -200,17 +212,31 @@ body {
 
 }
 
+header {
+    position: absolute;
+    z-index: 10;
+}
+
+.main {
+    position: relative;
+}
+
 .header-wrapper {
     display: flex;
     justify-content: space-between;
     padding: 30px 40px;
-    background-color: var(--color-light-xl);
+    width: 1200px;
 }
 
 .logo-container {
     display: flex;
     flex-direction: column;
     gap: 10px;
+
+    a {
+        text-decoration: none;
+        list-style: none;
+    }
 
     p {
         margin: 0;
@@ -222,6 +248,11 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
+
+    a {
+        text-decoration: none;
+        list-style: none;
+    }
 
     p {
         margin: 0;
@@ -293,6 +324,7 @@ body {
         line-height: 130%;
         letter-spacing: 6%;
         background-color: inherit;
+        cursor: pointer;
     }
 
     p {
@@ -329,18 +361,43 @@ body {
     text-align: center;
     vertical-align: middle;
     background-color: inherit;
-    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.paginator:hover {
+    background-color: var(--color-primary-light);
+    border: 2px solid #FDDCC4;
+}
+
+.paginator-inactive:disabled:hover {
+    background-color: transparent;
+    cursor: not-allowed;
 }
 
 .active {
     background-color: var(--color-primary);
     border-color: transparent;
     color: var(--color-dark-3xl);
+    cursor: pointer;
 }
 
-.inactive {
+.paginator-inactive {
+    border: 2px solid #CDCDCD;
+    width: 52px;
+    height: 52px;
+    border-radius: 100px;
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 114.99999999999999%;
+    letter-spacing: 6%;
+    text-align: center;
+    vertical-align: middle;
+    background-color: inherit;
     border: 2px solid #CDCDCD;
     color: var(--color-dark-s);
+    cursor: not-allowed;
+    transition: background-color 0.3s ease;
 }
 
 .act {
@@ -448,6 +505,7 @@ body {
         line-height: 130%;
         letter-spacing: 6%;
         color: var(--color-dark-3xl);
+        cursor: pointer;
     }
 }
 
@@ -458,6 +516,7 @@ body {
 
     button {
         align-content: center;
+        cursor: pointer;
     }
 }
 
@@ -500,6 +559,7 @@ body {
         line-height: 130%;
         letter-spacing: 6%;
         padding: 13px 35px;
+        cursor: pointer;
     }
 }
 
@@ -522,7 +582,7 @@ body {
         margin: 0;
     }
 
-    h5 {
+    .h5 {
         color: var(--color-dark-l);
         margin: 0;
     }
