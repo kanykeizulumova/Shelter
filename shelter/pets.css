@@ -27,9 +27,11 @@ html {
 .h3 {
     font-family: var(--main-font);
     font-weight: 400;
-    font-size: 44px;
+    font-size: 35px;
     line-height: 130%;
-    letter-spacing: 0%;
+    letter-spacing: 6%;
+    text-align: center;
+    vertical-align: middle;
 
 }
 
@@ -134,8 +136,7 @@ body {
         gap: 10px;
     }
 
-    h1,
-    h2 {
+    p {
         margin: 0;
         padding: 0;
     }
@@ -169,14 +170,6 @@ body {
 
 .our-pets {
     background-color: var(--color-light-l);
-
-    .pets {
-        padding: 80px 40px 100px 40px;
-    }
-
-    h1 {
-        text-align: center;
-    }
 }
 
 .pets-content {
@@ -186,7 +179,7 @@ body {
     align-items: center;
     padding: 80px 40px 100px 40px;
 
-    h2 {
+    h1 {
         text-align: center;
         color: var(--color-dark-l);
         margin: 0;
@@ -224,6 +217,7 @@ body {
     margin: 0;
     padding: 0;
     padding-bottom: 30px;
+    cursor: pointer;
 
     button {
         color: var(--color-dark-3xl);
