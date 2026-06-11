@@ -9,7 +9,6 @@
 html {
     overflow-x: hidden;
     scroll-behavior: smooth;
-    background-color: aquamarine;
 }
 
 
@@ -176,12 +175,18 @@ body {
 
 .footer-mail,
 .footer-phone {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: self-start;
-    gap: 20px;
-    color: var(--color-primary);
+
+
+    a {
+        text-decoration: none;
+        color: inherit;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: self-start;
+        gap: 20px;
+        color: var(--color-primary);
+    }
 
     img {
         width: 40px;
@@ -195,12 +200,18 @@ body {
 
 .boston-pin,
 .london-pin {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: self-start;
-    gap: 20px;
-    color: var(--color-primary);
+
+
+    a {
+        text-decoration: none;
+        color: inherit;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: self-start;
+        gap: 20px;
+        color: var(--color-primary);
+    }
 
     img {
         width: 22px;
@@ -216,6 +227,7 @@ body {
 header {
     position: absolute;
     z-index: 10;
+    width: 100%;
 }
 
 .main {
@@ -226,7 +238,8 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 30px 40px;
-    width: 1280px;
+    width: 100%;
+    max-width: 80rem;
 }
 
 .logo-container {
@@ -530,7 +543,7 @@ header {
         margin: 0;
     }
 
-    p {
+    .donation-text {
         color: var(--color-dark-m);
         margin: 0;
         font-family: var(--side-font);
@@ -547,7 +560,11 @@ header {
     padding-top: 11px;
 }
 
-.credit-card {
+
+.card-number-link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;

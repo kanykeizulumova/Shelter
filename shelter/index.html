@@ -12,7 +12,7 @@
 <body>
     <header>
         <div class="header-wrapper">
-            <div class="logo-container"><a href="index.html">
+            <div class="logo-container"><a href="#">
                     <h1 class="logo-title">Cozy House</h1>
                     <p class="logo-subtitle">Shelter for pets in Boston</p>
                 </a>
@@ -36,7 +36,7 @@
                         and
                         open heart. He or she
                         will love you more than anybody else in the world, you will see!</p>
-                    <button class="button-primary">Make a friend</button>
+                    <button class="button-primary" onclick="window.location.href='#pets'">Make a friend</button>
                 </div>
                 <div class="main-puppy">
                     <img src="../assets/start-screen-puppy.svg" alt="puppy">
@@ -61,7 +61,7 @@
                 </div>
             </div>
         </section>
-        <section class="pets">
+        <section class="pets" id="pets">
             <div class="pets-content">
                 <h3>Our friends who <br>are looking for a house</h3>
                 <div class="slider">
@@ -93,7 +93,7 @@
                         </svg>
                     </button>
                 </div>
-                <button class="button-primary">Get to know the rest</button>
+                <button class="button-primary" onclick="window.location.href='pets.html'">Get to know the rest</button>
             </div>
         </section>
         <section class="help" id="help">
@@ -148,10 +148,13 @@
                     <h3>You can also <br>make a donation</h3>
                     <p class="h5">Name of the bank / Type of bank account</p>
                     <div class="credit-card">
-                        <img src="../assets/credit-card.svg" alt="credit card icon">
-                        <h4>8380 2880 8028 8791 7435</h4>
+                        <a href="#" class="card-number-link">
+                            <img src="../assets/credit-card.svg" alt="credit card icon">
+                            <h4>8380 2880 8028 8791 7435</h4>
+                        </a>
                     </div>
-                    <p>Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum
+                    <p class="donation-text">Legal information and lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Maecenas a ipsum
                         at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate.
                         Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
                 </div>
@@ -163,26 +166,35 @@
             <div class="footer-contacts">
                 <h3>For questions and suggestions</h3>
                 <div class="footer-mail">
-                    <img src="../assets/mail.svg" alt="email logo">
-                    <h4>email@shelter.com</h4>
+                    <a href="mailto:email@shelter.com" class="footer-email">
+                        <img src="../assets/mail.svg" alt="email logo">
+                        <h4>email@shelter.com</h4>
+                    </a>
+
                 </div>
                 <div class="footer-phone">
-                    <img src="../assets/phone.svg" alt="phone logo">
-                    <h4>+13 674 567 75 54</h4>
+                    <a href="tel:+136745677554" class="footer-email">
+                        <img src="../assets/phone.svg" alt="phone logo">
+                        <h4>+13 674 567 75 54</h4>
+                    </a>
                 </div>
             </div>
             <div class="footer-locations">
                 <h3>We are waiting for your visit</h3>
                 <div class="footer-boston">
                     <div class="boston-pin">
-                        <img src="../assets/pin.svg" alt="pin logo">
-                        <h4>1 Central Street, Boston (entrance from the store)</h4>
+                        <a href="https://www.google.com/maps/place/Boston" target="_blank" class="footer-loc">
+                            <img src="../assets/pin.svg" alt="pin logo">
+                            <h4>1 Central Street, Boston (entrance from the store)</h4>
+                        </a>
                     </div>
                 </div>
                 <div class="footer-london">
                     <div class="london-pin">
-                        <img src="../assets/pin.svg" alt="pin logo">
-                        <h4>18 South Park, London</h4>
+                        <a href="https://www.google.com/maps/place/London" target="_blank" class="footer-loc">
+                            <img src="../assets/pin.svg" alt="pin logo">
+                            <h4>18 South Park, London</h4>
+                        </a>
                     </div>
                 </div>
             </div>
