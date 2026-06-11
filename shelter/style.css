@@ -26,7 +26,7 @@ html {
     --color-dark-3xl: #292929;
 }
 
-h2 {
+h1 {
     font-family: var(--main-font);
     font-weight: 400;
     font-size: 44px;
@@ -35,7 +35,7 @@ h2 {
 
 }
 
-h3 {
+h2 {
     font-family: var(--main-font);
     font-weight: 400;
     font-size: 35px;
@@ -44,7 +44,7 @@ h3 {
 
 }
 
-h4 {
+h3 {
     font-family: var(--main-font);
     font-weight: 400;
     font-size: 20px;
@@ -157,7 +157,7 @@ body {
     padding-top: 16px;
     padding-bottom: 60px;
 
-    h3 {
+    h2 {
         color: var(--color-light-xl);
         margin: 0;
     }
@@ -193,7 +193,7 @@ body {
         height: 32px;
     }
 
-    h4 {
+    h3 {
         margin: 0;
     }
 }
@@ -218,7 +218,7 @@ body {
         height: 32px;
     }
 
-    h4 {
+    h3 {
         margin: 0;
     }
 
@@ -278,7 +278,7 @@ header {
         padding: 80px 40px 100px 40px;
     }
 
-    h3 {
+    h2 {
         align-self: center;
     }
 }
@@ -379,7 +379,7 @@ header {
     padding: 80px 40px 100px 40px;
     color: var(--color-dark-l);
 
-    h3 {
+    h2 {
         text-align: center;
         height: auto;
         margin: 0;
@@ -405,7 +405,7 @@ header {
             height: 60px;
         }
 
-        h4 {
+        h3 {
             margin: 0;
         }
     }
@@ -429,7 +429,7 @@ header {
         margin-top: 14px;
         margin-bottom: 14px;
 
-        h3 {
+        h2 {
             margin: 0;
             color: var(--color-dark-l);
         }
@@ -448,7 +448,7 @@ header {
     align-items: center;
     padding: 80px 40px 100px 40px;
 
-    h3 {
+    h2 {
         text-align: center;
         color: var(--color-dark-l);
         margin: 0;
@@ -533,7 +533,7 @@ header {
     flex-direction: column;
     gap: 20px;
 
-    h3 {
+    h2 {
         color: var(--color-dark-l);
         margin: 0;
     }
@@ -581,7 +581,7 @@ header {
         color: var(--color-dark-3xl);
     }
 
-    h4 {
+    h3 {
         color: var(--color-dark-l);
         margin: 0;
     }

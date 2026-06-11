@@ -24,7 +24,7 @@ html {
     --color-dark-3xl: #292929;
 }
 
-h2 {
+.h3 {
     font-family: var(--main-font);
     font-weight: 400;
     font-size: 44px;
@@ -33,7 +33,7 @@ h2 {
 
 }
 
-h3 {
+h2 {
     font-family: var(--main-font);
     font-weight: 400;
     font-size: 35px;
@@ -42,7 +42,7 @@ h3 {
 
 }
 
-h4 {
+h3 {
     font-family: var(--main-font);
     font-weight: 400;
     font-size: 20px;
@@ -174,7 +174,7 @@ body {
         padding: 80px 40px 100px 40px;
     }
 
-    h3 {
+    h1 {
         text-align: center;
     }
 }
@@ -186,7 +186,7 @@ body {
     align-items: center;
     padding: 80px 40px 100px 40px;
 
-    h3 {
+    h2 {
         text-align: center;
         color: var(--color-dark-l);
         margin: 0;
@@ -327,7 +327,7 @@ body {
     padding-top: 16px;
     padding-bottom: 60px;
 
-    h3 {
+    h2 {
         color: var(--color-light-xl);
         margin: 0;
     }
@@ -357,7 +357,7 @@ body {
         height: 32px;
     }
 
-    h4 {
+    h3 {
         margin: 0;
     }
 }
@@ -376,7 +376,7 @@ body {
         height: 32px;
     }
 
-    h4 {
+    h3 {
         margin: 0;
     }
 
