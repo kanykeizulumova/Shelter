@@ -116,6 +116,7 @@ h4 {
     letter-spacing: 6%;
     vertical-align: middle;
     color: var(--color-primary);
+    margin: 0;
 }
 
 .logo-subtitle {
@@ -225,46 +226,24 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 30px 40px;
-    width: 1200px;
+    width: 1280px;
 }
 
 .logo-container {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+
 
     a {
         text-decoration: none;
         list-style: none;
     }
 
-    p {
-        margin: 0;
-        padding: 0;
-    }
-}
-
-.logo-contain {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-
-    a {
-        text-decoration: none;
-        list-style: none;
+    h1 {
+        padding-bottom: 10px;
     }
 
     p {
         margin: 0;
         padding: 0;
-    }
-
-    .logo-title {
-        color: var(--color-dark-l);
-    }
-
-    .logo-subtitle {
-        color: var(--color-dark-3xl);
     }
 }
 
@@ -277,11 +256,6 @@ header {
 .nav-link {
     text-decoration: none;
     color: var(--color-dark-s);
-}
-
-.nav-li {
-    text-decoration: none;
-    color: var(--color-dark-l);
 }
 
 .our-pets {
@@ -369,41 +343,10 @@ header {
     border: 2px solid #FDDCC4;
 }
 
-.paginator-inactive:disabled:hover {
-    background-color: transparent;
-    cursor: not-allowed;
-}
-
-.active {
-    background-color: var(--color-primary);
-    border-color: transparent;
-    color: var(--color-dark-3xl);
-    cursor: pointer;
-}
-
-.paginator-inactive {
-    border: 2px solid #CDCDCD;
-    width: 52px;
-    height: 52px;
-    border-radius: 100px;
-    font-family: var(--main-font);
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 114.99999999999999%;
-    letter-spacing: 6%;
-    text-align: center;
-    vertical-align: middle;
-    background-color: inherit;
-    border: 2px solid #CDCDCD;
-    color: var(--color-dark-s);
-    cursor: not-allowed;
-    transition: background-color 0.3s ease;
-}
-
-.act {
+.acti {
 
     border-bottom: 3px solid #F1CDB3;
-    color: var(--color-dark-3xl);
+    color: var(--color-light-s);
 }
 
 .paginator:hover {
